@@ -108,11 +108,11 @@ Slash commands are available after adding this project to Claude Code. They chai
 
 ```
 /steam:profile stealthylabs
-/steam:game Cyberpunk 2077
+/steam:game Battlefield 6
 /steam:trend Rust
 /steam:all 76561199832263296
 /steam:library stealthylabs
-/steam:achievements stealthylabs World of Tanks
+/steam:achievements stealthylabs Resident Evil Requiem
 /steam:coop stealthylabs gabelogannewell
 /steam:vac 76561199832263296 76561197960287930
 ```
@@ -144,7 +144,7 @@ Look up the Steam profile for "stealthylabs"
 
 What are my 10 most played games? (SteamID: 76561198XXXXXXXXX)
 
-Show me the global achievement stats for CS2
+Show me the global achievement stats for Grand Theft Auto V Legacy
 
 Which games have I bought but never launched?
 
