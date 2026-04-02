@@ -4,68 +4,35 @@ MCP server exposing Steam Web API tools to Claude Code and Gemini CLI.
 
 ---
 
+## Installation
+
+**One-liner (no clone needed)**
+
+macOS / Linux:
+```bash
+curl -fsSL https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main/install.sh | bash
+```
+
+Windows (PowerShell):
+```powershell
+irm https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main/install.ps1 | iex
+```
+
+The installer will:
+- Clone the repo and build it
+- Ask for your Steam API key (get one free at https://steamcommunity.com/dev/apikey)
+- Register the MCP server with Claude Code
+- Install all `/steam:*` slash commands
+
+Restart Claude Code after install to activate.
+
+---
+
 ## Prerequisites
 
 - Node.js 18+
+- Claude Code CLI
 - A Steam Web API key → https://steamcommunity.com/dev/apikey
-
----
-
-## Installation
-
-```bash
-git clone <repo>
-cd steam-mcp
-npm install
-npm run build
-```
-
----
-
-## Add to Claude Code
-
-### Option 1 - CLI (recommended)
-
-```bash
-claude mcp add steam-mcp -e STEAM_API_KEY=YOUR_KEY_HERE -- node C:/absolute/path/to/steam-mcp/dist/index.js
-```
-
-Verify it was added:
-
-```bash
-claude mcp list
-claude mcp get steam-mcp
-```
-
-### Option 2 - Edit `.claude/mcp.json` manually
-
-Open (or create) `.claude/mcp.json` in your project or home directory:
-
-```json
-{
-  "mcpServers": {
-    "steam-mcp": {
-      "command": "node",
-      "args": ["C:/absolute/path/to/steam-mcp/dist/index.js"],
-      "env": {
-        "STEAM_API_KEY": "YOUR_KEY_HERE"
-      }
-    }
-  }
-}
-```
-
-> Use an **absolute path** with forward slashes. The server is spawned by Claude Code as a child process - relative paths won't work.
-
-### Option 3 - Claude Code Desktop (GUI)
-
-1. Open Claude Code → **Settings** → **MCP Servers** → **Add server**
-2. Fill in:
-   - **Name**: `steam-mcp`
-   - **Command**: `node`
-   - **Args**: `C:/absolute/path/to/steam-mcp/dist/index.js`
-   - **Env**: `STEAM_API_KEY=YOUR_KEY_HERE`
-3. Save and restart Claude Code.
 
 ---
 
