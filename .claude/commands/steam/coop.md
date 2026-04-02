@@ -1,5 +1,5 @@
 ---
-description: Find games two players share in their Steam libraries — answer "what should we play tonight?"
+description: Find games two players share in their Steam libraries - answer "what should we play tonight?"
 ---
 
 Find common games between: $ARGUMENTS
@@ -15,7 +15,7 @@ Then compute the intersection: games where the AppID exists in both libraries.
 
 Present the results:
 
-## Games in common — {Player1} & {Player2}
+## Games in common - {Player1} & {Player2}
 
 **{X} games in common** out of {Y} and {Z} total games.
 

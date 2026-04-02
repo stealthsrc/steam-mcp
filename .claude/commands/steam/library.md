@@ -1,5 +1,5 @@
 ---
-description: Deep dive into a player's Steam library — backlog, habits, total hours, gamer profile
+description: Deep dive into a player's Steam library - backlog, habits, total hours, gamer profile
 ---
 
 Analyse the Steam library for: $ARGUMENTS
@@ -10,7 +10,7 @@ Do the following in parallel:
 
 Then compute and present:
 
-## Library Analysis — {Player}
+## Library Analysis - {Player}
 
 **Overview:**
 - Total games owned: X
@@ -22,7 +22,7 @@ Then compute and present:
 | # | Game | AppID | Playtime |
 (with store links: https://store.steampowered.com/app/{appid}/)
 
-**Backlog highlights** (owned but 0 minutes played — show up to 10 random ones):
+**Backlog highlights** (owned but 0 minutes played - show up to 10 random ones):
 | Game | AppID | Store |
 
 **Gamer profile** (AI-generated based on the data):

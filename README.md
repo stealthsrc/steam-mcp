@@ -24,7 +24,7 @@ npm run build
 
 ## Add to Claude Code
 
-### Option 1 — CLI (recommended)
+### Option 1 - CLI (recommended)
 
 ```bash
 claude mcp add steam-mcp -e STEAM_API_KEY=YOUR_KEY_HERE -- node C:/absolute/path/to/steam-mcp/dist/index.js
@@ -37,7 +37,7 @@ claude mcp list
 claude mcp get steam-mcp
 ```
 
-### Option 2 — Edit `.claude/mcp.json` manually
+### Option 2 - Edit `.claude/mcp.json` manually
 
 Open (or create) `.claude/mcp.json` in your project or home directory:
 
@@ -55,9 +55,9 @@ Open (or create) `.claude/mcp.json` in your project or home directory:
 }
 ```
 
-> Use an **absolute path** with forward slashes. The server is spawned by Claude Code as a child process — relative paths won't work.
+> Use an **absolute path** with forward slashes. The server is spawned by Claude Code as a child process - relative paths won't work.
 
-### Option 3 — Claude Code Desktop (GUI)
+### Option 3 - Claude Code Desktop (GUI)
 
 1. Open Claude Code → **Settings** → **MCP Servers** → **Add server**
 2. Fill in:
@@ -96,12 +96,12 @@ Slash commands are available after adding this project to Claude Code. They chai
 | Command | Arguments | Description |
 |---------|-----------|-------------|
 | `/steam:profile` | `<steamid\|vanity>` | Public profile + links to profile, friends, library |
-| `/steam:game` | `<game name>` | Search by name — price, Metacritic, live player count |
-| `/steam:trend` | `<game name>` | Health report — price, Metacritic, player count + verdict |
+| `/steam:game` | `<game name>` | Search by name - price, Metacritic, live player count |
+| `/steam:trend` | `<game name>` | Health report - price, Metacritic, player count + verdict |
 | `/steam:all` | `<steamid\|vanity>` | Full overview: profile + top games + recent activity + friends |
 | `/steam:library` | `<steamid\|vanity>` | Deep library analysis: backlog %, total hours, gamer profile |
 | `/steam:achievements` | `<steamid\|vanity> <game name>` | Achievement progress crossed with global rarity stats |
-| `/steam:coop` | `<steamid1> <steamid2>` | Find games both players own — sorted by combined playtime |
+| `/steam:coop` | `<steamid1> <steamid2>` | Find games both players own - sorted by combined playtime |
 | `/steam:vac` | `<steamid1> [steamid2] ...` | VAC/ban check for one or multiple players at once |
 
 ### Examples
@@ -126,13 +126,13 @@ Slash commands are available after adding this project to Claude Code. They chai
 | `steam_resolve_vanity_url` | Convert a vanity URL (e.g. `gabelogannewell`) to a SteamID64 |
 | `steam_get_player_summary` | Public profile: name, status, avatar, country, currently playing |
 | `steam_get_friend_list` | Friend list with names and dates (`resolve_names` param) |
-| `steam_get_player_bans` | VAC/game/community ban status for 1–100 accounts |
+| `steam_get_player_bans` | VAC/game/community ban status for 1-100 accounts |
 | `steam_get_owned_games` | Game library with playtime, sortable and filterable |
 | `steam_get_recently_played` | Games played in the last 2 weeks |
-| `steam_get_achievements` | Player achievement progress — filter by `locked/unlocked/all` |
+| `steam_get_achievements` | Player achievement progress - filter by `locked/unlocked/all` |
 | `steam_get_global_achievement_stats` | Global unlock rates (easiest/hardest achievements) |
 | `steam_get_game_schema` | Full list of achievements and stats defined by a game |
-| `steam_search_game` | Search by name — returns AppID, price, Metacritic score |
+| `steam_search_game` | Search by name - returns AppID, price, Metacritic score |
 | `steam_get_current_players` | Number of players currently in-game for any app |
 
 ---

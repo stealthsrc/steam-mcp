@@ -15,22 +15,22 @@ Do the following steps in order:
 
 Then present the results:
 
-## Achievements — {Game Name} — {Player}
+## Achievements - {Game Name} - {Player}
 
 **Progress:** X/Y (Z%)
 
 Cross-reference each unlocked achievement with its global unlock rate from `steam_get_global_achievement_stats`.
-Highlight the rarest unlocked achievements (lowest global %) with a note like "rare — only X% of players".
+Highlight the rarest unlocked achievements (lowest global %) with a note like "rare - only X% of players".
 
 Show two tables:
 
 ### Unlocked
 | Achievement | Unlocked on | Global % | Rarity |
-(sorted by global % ascending — rarest first)
+(sorted by global % ascending - rarest first)
 
 ### Still locked
 | Achievement | Global % |
-(sorted by global % descending — easiest first, so the player knows what to do next)
+(sorted by global % descending - easiest first, so the player knows what to do next)
 
 At the end, add a link to the achievements page:
 - https://steamcommunity.com/profiles/{steamid64}/stats/{appid}/achievements
