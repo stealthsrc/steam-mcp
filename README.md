@@ -1,6 +1,6 @@
 # steam-mcp
 
-MCP server exposing Steam Web API tools to Claude Code and Gemini CLI.
+MCP server exposing Steam Web API tools to Claude Code, Claude Desktop and Gemini CLI.
 
 ---
 
@@ -33,6 +33,31 @@ Restart Claude Code after install to activate.
 - Node.js 18+
 - Claude Code CLI
 - A Steam Web API key → https://steamcommunity.com/dev/apikey
+
+---
+
+## Add to Claude Desktop
+
+Edit your Claude Desktop config file:
+
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "steam-mcp": {
+      "command": "node",
+      "args": ["/absolute/path/to/steam-mcp/dist/index.js"],
+      "env": {
+        "STEAM_API_KEY": "YOUR_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+Restart Claude Desktop after saving.
 
 ---
 
