@@ -10,12 +10,12 @@ MCP server exposing Steam Web API tools to Claude Code, Claude Desktop and Gemin
 
 macOS / Linux:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/stealthsrc/steam-mcp/main/install.sh | bash
 ```
 
 Windows (PowerShell):
 ```powershell
-irm https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/stealthsrc/steam-mcp/main/install.ps1 | iex
 ```
 
 The installer will:

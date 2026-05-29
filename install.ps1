@@ -1,11 +1,11 @@
 # steam-mcp installer for Windows
 # Local:  .\install.ps1
-# Remote: irm https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main/install.ps1 | iex
+# Remote: irm https://raw.githubusercontent.com/stealthsrc/steam-mcp/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 
-$Repo        = "https://github.com/StealthyLabsHQ/steam-mcp"
-$RepoRaw     = "https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main"
+$Repo        = "https://github.com/stealthsrc/steam-mcp"
+$RepoRaw     = "https://raw.githubusercontent.com/stealthsrc/steam-mcp/main"
 $InstallDir  = "$env:USERPROFILE\.claude\servers\steam-mcp"
 $CommandsDir = "$env:USERPROFILE\.claude\commands\steam"
 

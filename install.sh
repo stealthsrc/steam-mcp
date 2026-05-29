@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # steam-mcp installer
 # Local:  bash install.sh
-# Remote: curl -fsSL https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main/install.sh | bash
+# Remote: curl -fsSL https://raw.githubusercontent.com/stealthsrc/steam-mcp/main/install.sh | bash
 
 set -e
 
-REPO="https://github.com/StealthyLabsHQ/steam-mcp"
-REPO_RAW="https://raw.githubusercontent.com/StealthyLabsHQ/steam-mcp/main"
+REPO="https://github.com/stealthsrc/steam-mcp"
+REPO_RAW="https://raw.githubusercontent.com/stealthsrc/steam-mcp/main"
 INSTALL_DIR="$HOME/.claude/servers/steam-mcp"
 COMMANDS_DIR="$HOME/.claude/commands/steam"
 
