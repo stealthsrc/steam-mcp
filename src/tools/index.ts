@@ -28,6 +28,19 @@ export {
 export {
   searchGameSchema,
   handleSearchGame,
+  getGameDetailsSchema,
+  handleGetGameDetails,
+  searchAnySchema,
+  handleSearchAny,
+  recommendGamesSchema,
+  handleRecommendGames,
   getCurrentPlayersSchema,
   handleGetCurrentPlayers,
 } from './store.js';
+
+export {
+  exportProfileDataSchema,
+  handleExportProfileData,
+  analyzePlayerSchema,
+  handleAnalyzePlayer,
+} from './profile-data.js';

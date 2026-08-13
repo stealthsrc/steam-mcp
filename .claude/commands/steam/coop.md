@@ -5,7 +5,7 @@ description: Find games two players share in their Steam libraries - answer "wha
 Find common games between: $ARGUMENTS
 
 The argument contains two Steam identifiers separated by a space (SteamID64 or vanity URLs).
-Example: `stealthylabs gabelogannewell` or `76561199832263296 76561197960287930`
+Example: `stealthylabs gabelogannewell` or `gabelogannewell robinwalker`
 
 Do the following in parallel:
 1. `steam_get_owned_games` for the first player (limit: 500, include_appinfo: true, sort_by: "playtime")

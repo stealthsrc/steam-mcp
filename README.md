@@ -102,11 +102,11 @@ Slash commands are available after adding this project to Claude Code. They chai
 /steam:profile stealthylabs
 /steam:game Battlefield 6
 /steam:trend Rust
-/steam:all 76561199832263296
+/steam:all gabelogannewell
 /steam:library stealthylabs
 /steam:achievements stealthylabs Resident Evil Requiem
 /steam:coop stealthylabs gabelogannewell
-/steam:vac 76561199832263296 76561197960287930
+/steam:vac gabelogannewell robinwalker
 ```
 
 ---
@@ -126,6 +126,11 @@ Slash commands are available after adding this project to Claude Code. They chai
 | `steam_get_game_schema` | Full list of achievements and stats defined by a game |
 | `steam_search_game` | Search by name - returns AppID, price, Metacritic score |
 | `steam_get_current_players` | Number of players currently in-game for any app |
+| `steam_get_game_details` | Rich store details: price, reviews, genres, platforms, media, DLC |
+| `steam_export_profile_data` | Export profile, bans, friends, library, recent activity, optional achievements |
+| `steam_analyze_player` | Infer play style, backlog, favorite genres/categories, top games |
+| `steam_search_any` | Broad Steam search across apps, games, DLC, software, demos with filters |
+| `steam_recommend_games` | Recommend unowned games from a player's Steam library and taste profile |
 
 ---
 
@@ -141,6 +146,14 @@ Show me the global achievement stats for Grand Theft Auto V Legacy
 Which games have I bought but never launched?
 
 Is Rust still worth buying in terms of player activity?
+
+Export a Steam profile as JSON for analysis
+
+Analyze what kind of games this Steam user likes: stealthylabs
+
+Search Steam for Linux co-op games under $10
+
+Recommend discounted games for this SteamID: 76561198XXXXXXXXX
 ```
 
 ---

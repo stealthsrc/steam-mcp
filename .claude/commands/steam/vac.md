@@ -7,7 +7,7 @@ Check ban status for: $ARGUMENTS
 The argument is one or more Steam identifiers separated by spaces (SteamID64 or vanity URLs).
 Examples:
 - `stealthylabs`
-- `76561199832263296 76561197960287930`
+- `gabelogannewell robinwalker`
 - `player1 player2 player3`
 
 Steps:
